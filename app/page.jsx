@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:col-span-1 flex gap-5">
-        <Image src={RetroPCs} alt="Top Laptops" quality={100} />
+          <Image src={GamingGrowth} alt="Top Laptops" quality={100} />
           <div className="flex flex-col gap-2">
             <h2 className="text-red text-2xl font-bold">02</h2>
             <h3 className="text-blue text-base font-bold">Top 10 Laptops of 2022</h3>
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:col-span-1 flex gap-5">
-        <Image src={GamingGrowth} alt="Top Laptops" quality={100} />
+          <Image src={RetroPCs} alt="Top Laptops" quality={100} />
           <div className="flex flex-col gap-2">
             <h2 className="text-red text-2xl font-bold">03</h2>
             <h3 className="text-blue text-base font-bold">The Growth of Gaming</h3>

@@ -44,23 +44,24 @@ export default function Navbar() {
         </nav>
 
         {menuIsOpen && (
-            <div className="fixed inset-0 z-50 flex flex-col items-center ">
-                <div className="w-3/4 h-full bg-white p-8 fixed right-0">
-                    <button className="absolute top-7 right-7" onClick={toggleMenu}>
-                        <Image
-                            src={NavClose}
-                            alt="Close Nav"
-                            quality={100}
-                        />
-                    </button>
-                    <ul class="space-y-4 mt-20 text-xl">
-                        <li><Link href='/' onClick={toggleMenu}>Home</Link></li>
-                        <li><Link href='/' onClick={toggleMenu}>New</Link></li>
-                        <li><Link href='/' onClick={toggleMenu}>Popular</Link></li>
-                        <li><Link href='/' onClick={toggleMenu}>Trending</Link></li>
-                        <li><Link href='/' onClick={toggleMenu}>Categories</Link></li>
-                    </ul>
-                </div>
+            <div className="fixed inset-0 z-50 flex items-center">
+                <div className="absolute inset-0 bg-blue bg-opacity-70 backdrop-blur-sm" onClick={toggleMenu}></div>
+                    <div className="w-3/4 h-full bg-offwhite p-8 fixed right-0 top-0 z-50">
+                        <button className="absolute top-7 right-7" onClick={toggleMenu}>
+                            <Image
+                                src={NavClose}
+                                alt="Close Nav"
+                                quality={100}
+                            />
+                        </button>
+                        <ul class="space-y-4 mt-20 text-xl">
+                            <li><Link href='/' onClick={toggleMenu}>Home</Link></li>
+                            <li><Link href='/' onClick={toggleMenu}>New</Link></li>
+                            <li><Link href='/' onClick={toggleMenu}>Popular</Link></li>
+                            <li><Link href='/' onClick={toggleMenu}>Trending</Link></li>
+                            <li><Link href='/' onClick={toggleMenu}>Categories</Link></li>
+                        </ul>
+                    </div>
             </div>
         )}
     </div>
