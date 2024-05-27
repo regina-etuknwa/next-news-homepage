@@ -25,11 +25,11 @@ export default function Navbar() {
                     quality={100}
                 />
                 <div className="hidden lg:flex space-x-4">
-                    <Link href='/'>Home</Link>
-                    <Link href='/'>New</Link>
-                    <Link href='/'>Popular</Link>
-                    <Link href='/'>Trending</Link>
-                    <Link href='/'>Categories</Link>
+                    <Link href='/' className="text-blue hover:text-red">Home</Link>
+                    <Link href='/' className="text-blue hover:text-red">New</Link>
+                    <Link href='/' className="text-blue hover:text-red">Popular</Link>
+                    <Link href='/' className="text-blue hover:text-red">Trending</Link>
+                    <Link href='/' className="text-blue hover:text-red">Categories</Link>
                 </div>
                 <div className="lg:hidden">
                     <button onClick={toggleMenu}>
